@@ -9,13 +9,15 @@ export const POST = async(req:NextRequest)=>{
     const firstName = data.first_name
     const lastName = data.last_name
     const imageUrl = data.image_url
+    const id = data.id;
 
     await db.user.create({
         data:{
+            id:id,
             emailAddress:emailAddress,
             firstName:firstName,
             lastName:lastName,
-            imageUrl:imageUrl
+            imageUrl:imageUrl,
         }
     })
     

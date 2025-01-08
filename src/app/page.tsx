@@ -1,6 +1,8 @@
-import { Button } from "@/components/ui/button";
+
+
+import  LinkAccountButton  from '../components/link-account-button';
 
 
 export default async function Home() {
-    return <Button>THis is the button i was taling about</Button>
+    return <LinkAccountButton/> 
 }
